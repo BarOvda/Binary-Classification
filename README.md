@@ -30,6 +30,7 @@ CUDA
 Will calculate and set the new points coordinates according to the local time the slave is handle.
 The rational of choosing the specific architecture - The big advantage of Cuda is that it can handle massive amount of small tasks on parallel, In this case, it handle massive amount of points which need to be relocated - its a perfect match! complexity evaluation - In this problem the max amount of input points are 500,000, and Invidia GPU have more then 500,000 threads.
 Which means that Each Cuda thread can handle a single point, loop through its dimensions.
+
 Complexity - O(k).
 
 -------------------------------------------------------------------------
